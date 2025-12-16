@@ -1,7 +1,7 @@
 -- Nombre: RP_analisis_cirugias_hemodinamia.sql
 -- Autor: Cristopher Villegas
 -- Fecha creacion: 15/12/25
--- Descripcion: Reporte para revisar las cirugias echas en EMODINAMIA y que no tienen que ser echas en EMODINAMIA
+-- Descripcion: Reporte para revisar las cirugias hechas en HEMODINAMIA y que no tienen que ser hechas en HEMODINAMIA
 
 select
     concat(p.nombre, ' ',p.paterno,' ',p.materno) as Nombre_Paciente,
