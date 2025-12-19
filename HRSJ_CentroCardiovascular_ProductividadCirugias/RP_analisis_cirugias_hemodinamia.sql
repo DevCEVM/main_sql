@@ -3,6 +3,13 @@
 -- Fecha creacion: 15/12/25
 -- Descripcion: Reporte para revisar las cirugias hechas en HEMODINAMIA y que no tienen que ser hechas en HEMODINAMIA
 
+
+-- TODO crear procedimiento almacenado de este query
+-- TODO quitar el and a.visitaID != 0
+select*
+from agenda
+where visitaID = 0;
+
 select concat(p.nombre, ' ', p.paterno, ' ', p.materno) as                                Nombre_Paciente,
        v.medico_asignado                                                                  Médico,
        ac.cirugia                                                                         Cirugía,
@@ -22,11 +29,4 @@ where a.habitacionID = 182
   and a.fecha > '2025-01-01 00:00:00'
   and a.fecha < '2026-01-01 00:00:00'
   and a.visitaID != 0
-;
-
--- TODO crear procedimiento almacenado de este query
--- TODO quitar el and a.visitaID != 0
-select*
-from agenda
-where visitaID = 0
 ;
