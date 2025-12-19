@@ -24,7 +24,7 @@ from sah_hrsj_valle.agenda a
          left join sah_hrsj_valle.users_especialidad usesp on v.medicoID = usesp.userID
          left join sah_hrsj_valle.especialidad e on usesp.especialidadID = e.id
          left join sah_hrsj_valle.pacientes p on v.pacienteID = p.id
-where a.habitacionID = 182
+where a.habitacionID = 183
   and a.fecha > '2025-01-01 00:00:00'
   and a.fecha < '2026-01-01 00:00:00'
   and a.visitaID != 0
