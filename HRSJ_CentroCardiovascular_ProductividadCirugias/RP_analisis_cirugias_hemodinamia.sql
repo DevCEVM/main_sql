@@ -3,7 +3,6 @@
 -- Fecha creacion: 15/12/25
 -- Descripcion: Reporte para revisar las cirugias hechas en HEMODINAMIA y que no tienen que ser hechas en HEMODINAMIA
 
-
 -- TODO crear procedimiento almacenado de este query
 -- TODO quitar el and a.visitaID != 0
 select*
